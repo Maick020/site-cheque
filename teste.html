@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href"" type="image/x-icon">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+  <title>Prencheque</title>
+  
+</head>
+<body>
+  <h1>Preencheque</h1>
+
+  <div class="cheque">
+    <div class="linha-topo">
+      <span>COMP</span>
+      <span>BANCO</span>
+      <span>AGENCIA</span>
+      <span>C1</span>
+      <span>CONTA</span>
+      <span>C2</span>
+      <span>CHEQUE N*</span>
+      <span>R$ <span id="valor-numeral">______</span></span>
+    </div>
+
+    <div class="texto">
+      Pague por esse cheque a quantia de <div id="value"><span id="valor-extenso">__________________________</span></div>
+    </div>
+
+  <div id="linha1"> </div>
+  <div class="linha"></div>  
+  <div class="linha">a</div>
+
+    <div class="assinatura">
+      <img src="img/icons8-banco-32.png" alt="">
+      <strong id="text">PREENCHEQUE</strong>
+      
+        <span id="cidade-extenso" class="campo">______</span>
+        
+        <span id="dia-extenso" class="campo">__</span>
+        <span>de</span>
+        <span id="mes-extenso" class="campo">______</span>
+        <span>de</span>
+        <span id="ano-extenso" class="campo">____</span>
+      
+      <span id="prazo_dt">(Prazo: <span id="prazo-data">   __/__/____</span>)</span>
+    </div>
+  </div>
+
+  <div class="form">
+    <div class="col">
+      <label for="valor">VALOR DO CHEQUE</label>
+      <input type="number" id="valor" class="input" placeholder="R$ 0,00" step="0.01" min="0">
+
+      <label for="cidade">CIDADE</label>
+      <input type="text" id="cidade" class="input" placeholder="Digite a cidade">
+
+      <label for="data">DATA</label>
+      <input type="date" id="data" class="input">
+    </div>
+
+    <div class="col">
+      <label for="prazo">PRAZO</label>
+      <input type="text" id="prazo" class="input" placeholder="Ex: 10 dias">
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
